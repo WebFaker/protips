@@ -1,5 +1,7 @@
 # SCSS | SASS
 
+https://sass-lang.com/guide
+
 ## Preprocessing :
 
 If your stylesheets are getting larger, more complex, and harder to maintain, this is where a preprocessor like SASS can help. It lets you use features that don't exist in CSS yet like **variables**, **mixins**, **inheritance** and other things that make writing CSS much easier.
@@ -33,9 +35,9 @@ body {
 
 ## Imports :
 
-Sass builds on top of the current CSS ```@import``` but instead of requiring an HTTP request like normal CSS, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser.
+Sass builds on top of the current CSS ```@import```. But instead of requiring an HTTP request like normal CSS, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser.
 
-Let's say you have a couple of Sass files, ```_reset.scss``` and ```base.scss```. We want to import ```_reset.scss``` into ```base.scss```.
+Imagine that you have two Sass files, ```_reset.scss``` and ```base.scss```. We want to import ```_reset.scss``` into ```base.scss```.
 
 ```SCSS
 // _reset.scss
@@ -62,9 +64,9 @@ body {
 }
 ```
 
-Notice we're using ```@import 'reset';``` in the ```base.scss``` file. When you import a file you don't need to include the file extension ```.scss```. Sass is smart and will figure it out for you. When you generate the CSS you'll get:
+**TIP :** We're using ```@import 'reset';``` in the ```base.scss``` file. When you import a file you don't need to include the file extension ```.scss```, because Sass will figure it out automatically. When you generate the CSS you'll get:
 
-```scss
+```css
 html, body, ul, ol {
   margin: 0;
   padding: 0;
