@@ -1,4 +1,4 @@
-#SCSS | SASS
+# SCSS | SASS
 
 ## Preprocessing :
 
