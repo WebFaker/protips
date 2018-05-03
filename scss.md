@@ -7,3 +7,18 @@ If your stylesheets are getting larger, more complex, and harder to maintain, th
 Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your website.
 
 The most direct way to make this happen is in your terminal. Once Sass is installed, you can compile your Sass to CSS using the sass command. You'll need to tell Sass which file to build from, and where to output CSS to. For example, running sass ```input.scss``` ```output.css``` from your terminal would take a single Sass file, ```input.scss```, and compile that file to ```output.css```.
+
+## Variables :
+
+Yes, you read right, you can put **variables** into a SCSS file.
+Think of variables as a way to store information that you want to reuse throughout your whole stylesheet. You can store things like **colors**, **font stacks**, or any CSS value you think you'll want to reuse. Sass uses the ```$``` symbol to make something a variable. Here's an example:
+
+```scss
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
