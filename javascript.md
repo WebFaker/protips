@@ -19,7 +19,7 @@ header.textContent = 'Hello world!';
 ```
 - Finally, make sure the HTML and JavaScript files are saved as usual, then load index.html in the browser. You should see something like the following:
 
-![alt text](https://mdn.mozillademos.org/files/9543/hello-world.png "Here's an example.")
+![alt text](https://cdn-images-1.medium.com/max/1600/1*cY2ahrsNP_gUtQKYlaUvZw.png "Here's an example.")
 
 ## 3. Variables
 
