@@ -4,8 +4,8 @@
 
 - SCSS
 
-- View.js
+- JavaScript
 
-- React.js
+- etc
 
 (*More Languages will be added soon*)
