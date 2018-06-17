@@ -8,12 +8,12 @@ If your stylesheets are getting larger, more complex, and harder to maintain, th
 
 Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your website.
 
-The most direct way to make this happen is in your terminal. Once Sass is installed, you can compile your Sass to CSS using the sass command. You'll need to tell Sass which file to build from, and where to output CSS to. For example, running sass ```input.scss``` ```output.css``` from your terminal would take a single Sass file, ```input.scss```, and compile that file to ```output.css```.
+The most direct way to make this happen is in your terminal. Once Sass is installed, you can compile your Sass to CSS using the sass command. You'll need to tell Sass which file to build from, and where to output CSS to. For example, running sass `input.scss` `output.css` from your terminal would take a single Sass file, `input.scss`, and compile that file to `output.css`.
 
 ## 2. Variables :
 
 Yes, you read right, you can put **variables** into a SCSS file.
-Think of variables as a way to store information that you want to reuse throughout your whole stylesheet. You can store things like **colors**, **font stacks**, or any CSS value you think you'll want to reuse. Sass uses the ```$``` symbol to make something a variable. Here's an example:
+Think of variables as a way to store information that you want to reuse throughout your whole stylesheet. You can store things like **colors**, **font stacks**, or any CSS value you think you'll want to reuse. Sass uses the `$` symbol to make something a variable. Here's an example:
 
 ```SCSS
 $font-stack:    Roboto, sans-serif;
@@ -24,7 +24,7 @@ body {
   color: $primary-color;
 }
 ```
-When the Sass is processed, it takes the variables we define for the ```$font-stack``` and ```$primary-color``` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
+When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
 ```SCSS
 body {
@@ -35,9 +35,9 @@ body {
 
 ## 3. Imports :
 
-Sass builds on top of the current CSS ```@import```. But instead of requiring an HTTP request like normal CSS, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser.
+Sass builds on top of the current CSS `@import`. But instead of requiring an HTTP request like normal CSS, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser.
 
-Imagine that you have two Sass files, ```_reset.scss``` and ```base.scss```. We want to import ```_reset.scss``` into ```base.scss```.
+Imagine that you have two Sass files, `_reset.scss` and `base.scss`. We want to import `_reset.scss` into `base.scss`.
 
 ```SCSS
 // _reset.scss
